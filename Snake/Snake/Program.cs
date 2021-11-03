@@ -6,11 +6,11 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point();
-            Point p2 = new Point();
+            Point p1 = new Point(2, 5, '*');
+            Point p2 = new Point(5, 2, '#');
 
-            p1.Draw(2, 5, '*');
-            p2.Draw(5, 2, '#');
+            p1.Draw();
+            p2.Draw();
 
 
             Console.ReadLine();
