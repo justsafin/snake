@@ -18,10 +18,10 @@ namespace Snake
             pointList.Add(p3);
             pointList.Add(p4);
 
-            foreach (Point i in pointList)
-            {
-                i.Draw();
-            }
+            HorizontalLine Hline = new HorizontalLine(0, 10, 10, '-');
+            VerticalLine Vline = new VerticalLine(0, 10, 0, '|');
+            Vline.lineDraw();
+            Hline.lineDraw();
 
 
             Console.ReadLine();
