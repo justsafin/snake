@@ -18,11 +18,16 @@ namespace Snake
             pointList.Add(p3);
             pointList.Add(p4);
 
-            HorizontalLine Hline = new HorizontalLine(0, 10, 10, '-');
-            VerticalLine Vline = new VerticalLine(0, 10, 0, '|');
-            Vline.lineDraw();
-            Hline.lineDraw();
+            HorizontalLine topHline = new HorizontalLine(0, 78, 0, '-');
+            HorizontalLine botHline = new HorizontalLine(0, 78, 24, '-');
+            VerticalLine leftVline = new VerticalLine(0, 24, 0, '|');
+            VerticalLine rightVline = new VerticalLine(0, 24, 78, '|');
+            
+            leftVline.lineDraw();
+            rightVline.lineDraw();
 
+            topHline.lineDraw();
+            botHline.lineDraw();
 
             Console.ReadLine();
         }
